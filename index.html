@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu Sample</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../src/menu.css">
+    <style>
+        /* Custom styles For menu*/
+
+        li.menu-item {
+            background-color: #009688;
+        }
+
+        li.menu-item:nth-child(1) {
+            background-color: #512da8;
+        }
+
+        li.menu-item:nth-child(2) {
+            background-color: #00bcd4;
+        }
+
+        li.menu-item:nth-child(3) {
+            background-color: #0288d1;
+        }
+
+        li.menu-item:nth-child(4) {
+            background-color: #ff7043;
+        }
+        /* Rest of the site */
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #FFFFFF;
+            color: #263238;
+        }
+
+        header {
+            background-color: #26a69a;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            align-content: center;
+            vertical-align: middle;
+            text-align: right;
+            color: #fafafa;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        .btn-menu {
+            cursor: pointer;
+            cursor: hand;
+            padding: 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu" id="menuId">
+        <li class="menu-item"><a href="#optionA">Option A</a></li>
+        <li class="menu-item"><a href="#optionB">Option B</a></li>
+        <li class="menu-item"><a href="#optionC">Option C</a></li>
+        <li class="menu-item"><a href="#optionC">Option D</a></li>
+        <li class="menu-item"><a href="#optionC">Option E</a></li>
+    </ul>
+
+    <header class="">
+        <a menu-toggle="menuId" class="btn-menu">Menu</a>
+    </header>
+    <section id="optionA">
+        <h1>Option A</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores labore illum dignissimos sequi tempore earum placeatn
+            nobis quaerat voluptate repudiandae magnam voluptas, voluptatibus perspiciatis, deserunt molestias a neque facere
+            voluptatum.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores labore illum dignissimos sequi tempore earum placeatn
+            nobis quaerat voluptate repudiandae magnam voluptas, voluptatibus perspiciatis, deserunt molestias a neque facere
+            voluptatum.
+        </p>
+    </section>
+    <section id="optionB">
+        <h1>Option B</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores labore illum dignissimos sequi tempore earum placeatn
+            nobis quaerat voluptate repudiandae magnam voluptas, voluptatibus perspiciatis, deserunt molestias a neque facere
+            voluptatum.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores labore illum dignissimos sequi tempore earum placeatn
+            nobis quaerat voluptate repudiandae magnam voluptas, voluptatibus perspiciatis, deserunt molestias a neque facere
+            voluptatum.
+        </p>
+    </section>
+
+    <section id="optionC">
+        <h1>Option C</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores labore illum dignissimos sequi tempore earum placeatn
+            nobis quaerat voluptate repudiandae magnam voluptas, voluptatibus perspiciatis, deserunt molestias a neque facere
+            voluptatum.
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores labore illum dignissimos sequi tempore earum placeatn
+            nobis quaerat voluptate repudiandae magnam voluptas, voluptatibus perspiciatis, deserunt molestias a neque facere
+            voluptatum.
+        </p>
+    </section>
+
+
+
+    <script src="../src/menu.js"></script>
+    <script>
+        // Your script
+        var options = {
+            showAnimations: true,
+            // animationHideClass: 'hide-left',
+            // animationShowClass: 'show-left',
+        };
+        Menu.init(options);
+        // Menu.toggle('menuId');
+    </script>
+</body>
+
+</html>

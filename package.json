@@ -1,0 +1,25 @@
+{
+  "name": "vanilla-js-fullscreen-menu",
+  "version": "1.0.0",
+  "description": "A vanilla js plugin to display a full screen menu.",
+  "main": "dist/menu.min.js",
+  "files": [
+    "dist/menu.min.js",
+    "dist/menu.min.css"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "minifier": "^0.8.1"
+  },
+  "scripts": {
+    "minify": "minify",
+    "lite-server": "lite-server",
+    "start": "lite-server",
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "minify --output dist/menu.min.js src/menu.js",
+    "build:css": "minify --output dist/menu.min.css src/menu.css"
+  },
+  "author": "JP Guevara",
+  "license": "MIT"
+}

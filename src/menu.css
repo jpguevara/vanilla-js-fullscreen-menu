@@ -1,0 +1,117 @@
+ul.menu {
+    /* float the menu on the top*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    /* display as a list in full screen*/
+    display: table;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+li.menu-item {
+    display: table-row;
+    list-style-type: none;
+    background-color: #494949;
+    color: white;
+
+    
+}
+
+.menu-item a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+li.menu-item:nth-child(1) {
+    background-color: #999;
+}
+
+li.menu-item:nth-child(2) {
+    background-color: #888;
+}
+
+li.menu-item:nth-child(3) {
+    background-color: #777;
+}
+
+li.menu-item:nth-child(4) {
+    background-color: #666;
+}
+
+li.menu-item:nth-child(5) {
+    background-color: #555;
+}
+
+li.menu-item:nth-child(6) {
+    background-color: #444;
+}
+
+li.menu-item:nth-child(7) {
+    background-color: #333;
+}
+
+li.menu-item:nth-child(8) {
+    background-color: #222;
+}
+
+.menu.menu-hidden {
+    top: -1000px;
+}
+
+.menu.menu-show {
+    top: 0;
+}
+
+/* Animations */
+
+@keyframes hide-to-top {
+    0% { top:0px; }
+    100% { top: -100vh; }
+}
+@keyframes show-from-top {
+    0% { top:-100vh; }
+    100% { top: 0; }
+}
+
+@keyframes hide-to-left {
+    0% { top:0px; left:0px;  }
+    100% { top: 0px;  left:-100vw; }
+}
+@keyframes show-from-left {
+    0% { top: 0px;  left:-100vw;}
+    100% { top:0px; left:0px; }
+}
+
+.menu-hide-animate{
+    animation-delay: 0s;
+    animation-duration: .35s;
+    animation-name: hide-to-top;
+    animation-fill-mode: forwards;
+}
+
+.menu-show-animate{
+    animation-delay: 0s;
+    animation-duration: .35s;
+    animation-name: show-from-top;
+    animation-fill-mode: forwards;
+}
+.hide-left{
+    animation-delay: 0s;
+    animation-duration: .35s;
+    animation-name: hide-to-left;
+    animation-fill-mode: forwards;
+}
+.show-left{
+    animation-delay: 0s;
+    animation-duration: .35s;
+    animation-name: show-from-left;
+    animation-fill-mode: forwards;
+}
