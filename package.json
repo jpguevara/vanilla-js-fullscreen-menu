@@ -9,13 +9,12 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "lite-server": "^2.4.0",
     "minifier": "^0.8.1"
   },
   "scripts": {
     "minify": "minify",
-    "lite-server": "lite-server",
-    "start": "lite-server",
+    "lite-server": "npx http-server",
+    "start": "npx http-server",
     "build": "npm run build:js && npm run build:css",
     "build:js": "minify --output dist/menu.min.js src/menu.js",
     "build:css": "minify --output dist/menu.min.css src/menu.css"
